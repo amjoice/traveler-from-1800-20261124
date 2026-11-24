@@ -12,11 +12,17 @@ byte-identical on every run. Standard library only.
 
 import os
 
-SENTENCE = (
+# The picture, in two clauses: the joining, then what it makes possible.
+OPENING = (
     "Think of the post office, the library, and the market of every town "
-    "on earth joined by wires, so a letter crosses the world in a breath "
-    "and a reader may open the books of any library."
+    "on earth joined by wires, "
 )
+CLOSING = (
+    "so a letter crosses the world in a breath and a reader may open "
+    "the books of any library."
+)
+
+SENTENCE = OPENING + CLOSING
 
 
 def main():
